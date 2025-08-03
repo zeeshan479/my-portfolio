@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+.scroll-container::-webkit-scrollbar {
+  width: 7px;
+  
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: pink;
+  border-radius: 8px;
+  height: 3px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: oklch(66.6% 0.179 58.318);
+}
+
+.slider-container {
+  position: relative;
+}
+
+.slider-track {
+  animation: scroll-left 10s steps(10) infinite;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
