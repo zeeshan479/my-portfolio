@@ -85,9 +85,9 @@ const Home = () => {
               </div>
               <div className='text-justify text-lg flex flex-col gap-3 text-gray-500'>
                   <p>
-                  Passionate MERN Stack Developer skilled in building responsive web applications with MongoDB, 
-                  Express.js, React, and Node.js. Eager to create modern, 
-                  user-friendly solutions and contribute to impactful projects in a dynamic team environment.
+                    MERN Stack Developer focused on delivering high-quality, scalable web applications that enhance user engagement. 
+                    Proficient in React, Node.js, Express.js, and MongoDB with a growth mindset and dedication to continuous learning. 
+                    Seeking to contribute to impactful projects in a fast-paced development team
                   </p>
               </div>
             </div>
