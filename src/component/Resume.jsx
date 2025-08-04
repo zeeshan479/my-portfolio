@@ -3,6 +3,35 @@ import Layout from './Layout'
 import { Link, useLocation } from 'react-router-dom'
 const Resume = () => {
   
+  const skills = [
+    {
+      title: <p className='text-gray-400 capitalize'>nodejs</p>,
+    },
+    {
+      title: <p className='text-gray-400 capitalize'>mongodb</p>,
+    },
+    {
+      title: <p className='text-gray-400 capitalize'>docker</p>,
+    },
+    {
+      title: <p className='text-gray-400 capitalize'>redis</p>,
+    },
+    {
+      title: <p className='text-gray-400 capitalize'>kafka</p>,
+    },
+    {
+      title: <p className='text-gray-400 capitalize'>grpc</p>,
+    },
+    {
+      title: <p className='text-gray-400 capitalize'>rabitmq</p>,
+    },
+    {
+      title: <p className='text-gray-400 capitalize'>aws cloud</p>,
+    },
+    {
+      title: <p className='text-gray-400 capitalize'>ci/cd</p>,
+    },
+  ]
   return (
      <Layout>
           <div className="h-[800px] main-container md:p-4">
@@ -49,7 +78,7 @@ const Resume = () => {
                       <button className='w-12 h-12'></button>
                       <div>
                         <h6 className='text-lg font-bold'>Full Stack Developer (3 + years)</h6>
-                        <p className=' text-sm font-medium text-gray-600'>Techsunset [2025]</p>
+                        <p className=' text-sm font-medium text-gray-600'>Techsunset [2022 - 2025]</p>
                       </div>
                     </div>
                     <div className='border-b-2 border-rose-600 py-2'></div>
@@ -109,38 +138,14 @@ const Resume = () => {
                       <button className='w-12 h-12'></button>
                       <div className='space-y-3'>
                         <h1 className='text-orange-600 font-bold text-2xl'>Expertise Skills</h1>
-                        <div className='flex gap-3'>
-                          <i class="ri-gemini-fill font-bold"></i>
-                          <p className='text-gray-400 capitalize'>reactjs</p>  
-                        </div>     
-                        <div className='flex gap-3'>
-                          <i class="ri-gemini-fill font-bold"></i>
-                          <p className='text-gray-400 capitalize'>nextjs</p>  
-                        </div>     
-                        <div className='flex gap-3'>
-                          <i class="ri-gemini-fill font-bold"></i>
-                          <p className='text-gray-400 capitalize'>Nodejs</p>  
-                        </div>     
-                        <div className='flex gap-3'>
-                          <i class="ri-gemini-fill font-bold"></i>
-                          <p className='text-gray-400 capitalize'>express</p>  
-                        </div>     
-                        <div className='flex gap-3'>
-                          <i class="ri-gemini-fill font-bold"></i>
-                          <p className='text-gray-400 capitalize'>MongoDB</p>  
-                        </div>     
-                        <div className='flex gap-3'>
-                          <i class="ri-gemini-fill font-bold"></i>
-                          <p className='text-gray-400 capitalize'>AWS Cloud</p>  
-                        </div>     
-                        <div className='flex gap-3'>
-                          <i class="ri-gemini-fill font-bold"></i>
-                          <p className='text-gray-400 capitalize'>Docker</p>  
-                        </div>     
-                        <div className='flex gap-3'>
-                          <i class="ri-gemini-fill font-bold"></i>
-                          <p className='text-gray-400 capitalize'>Redish</p>  
-                        </div>     
+                        {
+                          skills.map((item, index)=>(
+                          <div key={index} className='flex gap-3' >
+                            <i class="ri-gemini-fill font-bold"></i>
+                            {item.title}  
+                          </div>     
+                          ))
+                        }  
                       </div>
                     </div>
                     <div className='border-b-2 border-rose-600 py-2'></div>
