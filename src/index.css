@@ -6,13 +6,13 @@
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
-  background-color: pink;
+  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(253,115,200,1) 0%, rgba(0,92,141,1) 90.5% );
   border-radius: 8px;
   height: 3px;
 }
 
 .scroll-container::-webkit-scrollbar-thumb:hover {
-  background-color: oklch(66.6% 0.179 58.318);
+  background-image: radial-gradient( circle farthest-corner at 6.3% 21.8%,  rgba(236,6,117,1) 0%, rgba(13,32,67,1) 90% );
 }
 
 .slider-container {
