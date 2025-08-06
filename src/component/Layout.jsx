@@ -55,7 +55,7 @@ const Layout = ({children}) => {
           <img src='/images/logo.png' className=' py-3 '/>
           <div className='w-full md:flex gap-8  px-12 mt-24 space-y-6'>
             <div className='md:w-[27%] bg-white rounded-3xl shadow-2xl'>
-              <div className='md:absolute top-14 left-30 rounded-3xl mx-auto p-2 shadow-2xl animate__animated animate__flash animte__infinite'>
+              <div className='md:absolute top-14 left-30 rounded-3xl mx-auto p-2 shadow-2xl animate__animated animate__bounce'>
                 <img src='./images/zishu.png' className='rounded-3xl object-cover w-56 h-56'/>
               </div>
               <div className='mt-40 text-center flex  flex-col gap-3'>
@@ -142,7 +142,7 @@ const Layout = ({children}) => {
                     to={item.link}
                     className='shadow-2xl w-20 h-20 bg-gray-100 flex flex-col items-center p-4 rounded-2xl mx-auto hover:bg-blue-600 hover:text-white text-gray-950'
                     style={{
-                      backgroundColor: (location.pathname === item.link) ?  'oklch(54.6% 0.245 262.881)': 'oklch(70.4% 0.04 256.788)',
+                      backgroundImage: (location.pathname === item.link) ?  'linear-gradient( 111.6deg,  rgba(114,167,232,1) 9.4%, rgba(253,129,82,1) 43.9%, rgba(253,129,82,1) 54.8%, rgba(249,202,86,1) 86.3% )': 'radial-gradient( circle farthest-corner at 6.3% 21.8%,  rgba(236,6,117,1) 0%, rgba(13,32,67,1) 90% )',
                       color: 'white'
                     }}
                   >
