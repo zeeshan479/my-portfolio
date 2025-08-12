@@ -37,12 +37,12 @@ const Resume = () => {
           <div className="h-[800px] main-container md:p-4">
               <div className="min-h-screen bg-[url('./images/frame.png')] bg-cover bg-center w-full">
                 <div 
-                  className='md:flex md:py-12'>
+                  className='md:flex md:py-12 gap-4'>
                   <div 
                     className='p-4'>
                     <div 
-                      className="w-[270px] h-[270px] bg-cyan-600 rounded-full md:mx-24 sm:mx-12 md:mt-6"
-                      style={{boxShadow: '0px 8px 16px 0px rgba(0,0,0,0.5)'}}
+                      className="w-[270px] h-[270px] bg-cyan-600 rounded-full mx-24"
+                      style={{boxShadow: '0px 8px 16px 0px rgba(0,0,0,0.9)'}}
                     >
                       <div className="w-[250px] h-[250px] rounded-full">
                         <img 
@@ -53,13 +53,16 @@ const Resume = () => {
                     </div>
                   </div>
                   <div>
-                    <div className='mt-12 bg-rose-100 shadow-2xl'>
+                    <div 
+                      className='mt-6 bg-rose-100 shadow-2xl'
+                      style={{boxShadow: '0px 8px 16px 0px rgba(0,0,0,0.9)'}}
+                    >
                       <div className='px-6 py-6'>
-                        <h1 className='text-2xl text-teal-600 font-bold font-sans capitalize'>zeeshan khan</h1>
-                        <p className=' text-md font-bold font-mono capitalize'>Full Stack Developer</p>
+                        <h1 className='text-3xl text-teal-600 font-bold font-sans capitalize'>zeeshan khan</h1>
+                        <p className='text-lg font-bold font-mono capitalize'>Full Stack Developer</p>
                       </div>
                       <div className='px-6 py-5 md:flex flex-col gap-1'>
-                        <h1 className='text-2xl text-teal-600 font-bold font-sans capitalize'>Contact Me</h1>
+                        <h1 className='text-3xl text-teal-600 font-bold font-sans capitalize'>Contact Me</h1>
                         <p className='text-md text-gray-600'>+91 9893676855</p>
                         <p className='text-md text-gray-600'>zeeshantechsunset@gmail.com</p>
                         <p className='text-md text-gray-600 capitalize'>Goharganj, Madhya Pradesh, India</p>
@@ -69,8 +72,8 @@ const Resume = () => {
                 </div>
 
                 <div className='md:flex'>
-                  <div className='md:w-6/12 md:pl-16 sm:pl-8 py-8 md:space-y-1'>
-                    <div className='flex gap-6 items-center'>
+                  <div className='md:w-6/12 md:pl-8 md:py-8 md:space-y-2 sm:space-y-4'>
+                    <div className='flex gap-6 items-center sm:space-y-4'>
                       <button className='bg-red-400 w-12 h-12 rounded-full'><i class="ri-image-edit-line text-3xl text-white"></i></button>
                       <h1 className='text-2xl font-bold capitalize bg-red-200 px-4 py-1 text-orange-600 rounded'>work experience</h1>
                     </div>

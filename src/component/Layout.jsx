@@ -52,15 +52,15 @@ const Layout = ({children}) => {
   return (
     <div>
         <div style={{backgroundImage: 'url(./images/bg-page.jpg)'}}>
-          <img src='/images/logo.png' className=' py-3 '/>
-          <div className='w-full md:flex gap-8  px-12 mt-24 space-y-6'>
+          <img src='/images/logo.png' className='py-2'/>
+          <div className='w-full md:flex gap-8  md:px-12 md:mt-20 md:space-y-6'>
             <div className='md:w-[27%] bg-white rounded-3xl shadow-2xl'>
-              <div className='md:absolute top-14 left-30 rounded-3xl mx-auto p-2 shadow-2xl animate__animated animate__bounce'>
+              <div className='md:absolute md:top-12 md:left-32 rounded-3xl mx-auto shadow-2xl w-56 h-56'>
                 <img src='./images/zishu.png' className='rounded-3xl object-cover w-56 h-56'/>
               </div>
-              <div className='mt-40 text-center flex  flex-col gap-3'>
+              <div className='md:mt-40 sm:mt-20 text-center flex  flex-col gap-3'>
                 <h1 className='text-3xl font-bold font-serif capitalize'>Zeeshan Khan</h1>
-                <div className='text-md font-semibold bg-gray-100 w-fit mx-auto px-4 py-1 rounded-lg capitalize'>Full Stack MERN Developer</div>
+                <div className='text-md font-semibold bg-gray-100 w-fit mx-auto px-4 py-1 rounded-lg capitalize'>Full Stack Developer</div>
                 <div className='text-2xl flex justify-center gap-4'>
                   <Link className=' bg-gray-200 hover:bg-blue-600 w-10 h-10 rounded-xl'><i class="ri-linkedin-fill text-blue-900 hover:text-white"></i></Link>
                   <Link className=' bg-gray-200 hover:bg-blue-600 w-10 h-10 rounded-xl'><i class="ri-facebook-fill text-blue-600 hover:text-white"></i></Link>
@@ -118,9 +118,9 @@ const Layout = ({children}) => {
                   <hr className='w-[100%] text-gray-300 mt-2'/>
                 </div>
               </div>
-              <div className='mt-8 ml-16'>
+              <div className='mt-8 py-2 w-72 mx-auto'>
                 <button 
-                  className='px-10 py-3 bg-blue-600 flex text-white gap-1 items-center gap-3 hover:bg-white border border-blue-300 hover:text-gray-900 rounded-xl'
+                  className='w-full px-10 py-4 bg-blue-600 flex text-white gap-4 items-center gap-3 hover:bg-white border border-blue-300 hover:text-gray-900 rounded-xl'
                   onClick={hanldeChange}
                 >
                   <i class="ri-download-2-fill text-3xl"></i>
