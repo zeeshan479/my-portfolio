@@ -8,27 +8,33 @@ const Home = () => {
   [
     {
       img: <img src='./ziya/super.png' className='w-full'/>,
-      project: 'SUPERCO'
+      title: 'Livspace',
+      domain: 'https://www.livspace.com'
     },
     {
       img: <img src='./ziya/fish.png' className='w-full'/>,
-      project: 'MANPRO'
+      title: 'Sri Chaitanya SCORE 2025',
+      domain: 'https://srichaitanyascore.com'
     },
     {
       img: <img src='./ziya/winni.png' className='w-full'/>,
-      project: 'HEAVENCO'
+      title: 'HomeLane',
+      domain: 'https://www.homelane.com'
     },
     {
       img: <img src='./ziya/abscount.png' className='w-full'/>,
-      project: 'THEARO'
+      title: 'Vaishnavi Interiors',
+      domain: 'https://www.vaishnaviinteriors.in'
     },
     {
       img: <img src='./ziya/diffrentiators.png' className='w-full'/>,
-      project: 'RAMPDO'
+      title: 'Ugaoo',
+      domain: 'https://www.ugaoo.com'
     },
     {
       img: <img src='./ziya/clovedental.png' className='w-full'/>,
-      project: 'CYCLO'
+      title: 'Livspace',
+      domain: 'https://www.livspace.com'
     },
   ];
 
@@ -87,7 +93,7 @@ const Home = () => {
                   <p>
                     MERN Stack Developer focused on delivering high-quality, scalable web applications that enhance user engagement. 
                     Proficient in React, Node.js, Express.js, and MongoDB with a growth mindset and dedication to continuous learning. 
-                    Seeking to contribute to impactful projects in a fast-paced development team
+                    Seeking to contribute to impactful titles in a fast-paced development team
                   </p>
               </div>
             </div>
@@ -110,10 +116,10 @@ const Home = () => {
                         <div className='h-20 w-72 bg-[#FFF4F4] rounded-b-xl mx-auto border border-gray-200 px-6 py-4 space-y-2'>
                           <p className='text-sm text-gray-500 '>Travel Landing , UX/UI</p>
                           <Link 
-                            to={'#'}
+                            to={items.domain}
                             className='font-semibold font-serif text-stone-600'
                           >
-                            {items.project}
+                            {items.title}
                           </Link>
                         </div>
                       </div>
