@@ -115,7 +115,7 @@ const Projects = () => {
                           <p className='text-sm text-gray-500 '>Travel Landing , UX/UI</p>
                           <Link 
                             to={items.domain}
-                            className='font-semibold font-serif text-stone-600 text-lg'
+                            className='font-semibold font-serif text-stone-600 text-lg hover:text-blue-600'
                           >
                             {items.title}
                           </Link>
