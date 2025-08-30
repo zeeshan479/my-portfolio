@@ -165,27 +165,38 @@ const Resume = () => {
                         <div className='space-y-4'>
                           <div className='flex gap-3 hover:text-cyan-600'>
                             <i class="ri-folder-open-fill font-bold"></i>
-                            <Link className='text-gray-400 capitalize '>project 1</Link>  
+                            <Link  
+                              to='https://www.livspace.com' 
+                              className='text-gray-400 capitalize'
+                            >project 1</Link>  
                           </div> 
                           <div className='flex gap-3 hover:text-cyan-600'>
                             <i class="ri-folder-open-fill font-bold"></i>
-                            <Link className='text-gray-400 capitalize '>project 2</Link>  
+                            <Link 
+                              to='https://srichaitanyascore.com' 
+                              className='text-gray-400 capitalize'
+                            >project 2</Link>  
                           </div> 
                           <div className='flex gap-3 hover:text-cyan-600'>
                             <i class="ri-folder-open-fill font-bold"></i>
-                            <Link className='text-gray-400 capitalize '>project 3</Link>  
+                            <Link 
+                              to='https://www.homelane.com' 
+                              className='text-gray-400 capitalize'
+                            >project 3</Link>  
                           </div> 
                           <div className='flex gap-3 hover:text-cyan-600'>
                             <i class="ri-folder-open-fill font-bold"></i>
-                            <Link className='text-gray-400 capitalize '>project 4</Link>  
+                            <Link 
+                              to='https://www.vaishnaviinteriors.in' 
+                              className='text-gray-400 capitalize'
+                            >project 4</Link>  
                           </div> 
                           <div className='flex gap-3 hover:text-cyan-600'>
                             <i class="ri-folder-open-fill font-bold"></i>
-                            <Link className='text-gray-400 capitalize '>project 5</Link>  
-                          </div> 
-                          <div className='flex gap-3 hover:text-cyan-600'>
-                            <i class="ri-folder-open-fill font-bold"></i>
-                            <Link className='text-gray-400 capitalize '>project 6</Link>  
+                            <Link 
+                              to='https://www.ugaoo.com' 
+                              className='text-gray-400 capitalize'
+                              >project 5</Link>  
                           </div> 
                         </div>
                       </div>
