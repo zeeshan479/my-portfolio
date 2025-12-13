@@ -4,7 +4,7 @@ import {
   Routes,
   Route,
 } from 'react-router-dom'
-import { Link } from 'react-router-dom'
+
 import 'remixicon/fonts/remixicon.css'
 import Home from './component/Home'
 import Resume from './component/Resume'

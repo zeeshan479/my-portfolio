@@ -79,68 +79,97 @@ const Projects = () => {
     intervalRefs.current[index] = interval;
   };
 
+  const mySkills = [
+    "React.js",
+    "Next.js",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Tailwind",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "Redis",
+    "AWS",
+    "Git",
+    "Jira",
+    "Docker",
+    "CI/CD",
+    "gRPC"
+];
     
   return (
-          <div className='flex-1 p-12 h-[800px] main-container'>
-            <div className='flex flex-col gap-4'>
-              <div className='flex items-center gap-6'>
-                  <h1 className='text-4xl font-bold font-serif'>Portfolio</h1>
-                  <hr className='w-48 border border-b-3 border-blue-600 rounded-full mt-3'/>
-              </div>
-              <div className='text-justify text-lg flex flex-col gap-3 text-gray-500'>
-                  <p>
-                    MERN Stack Developer focused on delivering high-quality, scalable web applications that enhance user engagement. 
-                    Proficient in React, Node.js, Express.js, and MongoDB with a growth mindset and dedication to continuous learning. 
-                    Seeking to contribute to impactful titles in a fast-paced development team
-                  </p>
-              </div>
-            </div>
+    <div className='flex-1 p-12 h-[800px] main-container'>
+      <div className='flex flex-col gap-4'>
+        <div className='flex items-center gap-6'>
+            <h1 className='text-4xl font-bold font-serif'>Portfolio</h1>
+            <hr className='w-48 border border-b-3 border-blue-600 rounded-full mt-3'/>
+        </div>
+        <div className='text-justify text-lg flex flex-col gap-3 text-gray-500'>
+            <p>
+              MERN Stack Developer focused on delivering high-quality, scalable web applications that enhance user engagement. 
+              Proficient in React, Node.js, Express.js, and MongoDB with a growth mindset and dedication to continuous learning. 
+              Seeking to contribute to impactful titles in a fast-paced development team
+            </p>
+        </div>
+      </div>
 
-            <div className='flex flex-col mt-6 gap-6 p-2'>
-                <h1 className='text-3xl font-serif font-bold'>what I Do !</h1>
-                <div className='md:grid md:grid-cols-2 gap-8 space-y-4'>
-                  {
-                    cards.map((items, index)=>(
-                      <div>
-                        <div
-                            ref={(el) => (scrollRefs.current[index] = el)}
-                            onMouseEnter={() => startScroll(index, "up")}
-                            onMouseLeave={() => startScroll(index, "down")}
-                            className="h-80 w-72 overflow-y-scroll border border-gray-200 relative rounded-t-xl shadow-2xl mx-auto"
-                            style={{overflow: 'hidden'}}
-                        >
-                          {items.img}
-                        </div>
-                        <div className='h-20 w-72 bg-[#FFF4F4] rounded-b-xl mx-auto border border-gray-200 px-6 py-4 space-y-2'>
-                          <p className='text-sm text-gray-500 '>Travel Landing , UX/UI</p>
-                          <Link 
-                            to={items.domain}
-                            className='font-semibold font-serif text-stone-600 text-lg hover:text-blue-600'
-                          >
-                            {items.title}
-                          </Link>
-                        </div>
-                      </div>
-                    ))
-                  }
-                </div>
-                <div className='h-36 slider-container  w-full bg-rose-300 py-4 overflow-hidden'>
-                  <div className='flex py-4 gap-12 px-8 slider-track '>
-                    {
-                    logos.map((logo, index)=>
-                    (
-                        <img
-                          key={index}
-                          src={logo}
-                          alt={`Client ${index}`}
-                          className="h-16 mx-4 flex-shrink-0"
-                        />
-                    ))
-                    }
+      <div className='mt-6'>
+        <h2 className='text-3xl font-bold capitalize font-serif'>my-skills</h2>
+        <div className='md:grid md:grid-cols-4 md:p-8 gap-4 border border-gray-400 rounded-2xl mt-2'>
+          {
+            mySkills.map((item, index)=>(
+              <div key={index} className='px-4 py-2 text-center border border-gray-300 text-lg rounded-full text-zinc-500 font-semibold hover:shadow-xl'>{item}</div>
+            ))
+          }
+        </div>
+      </div>
+
+      <div className='flex flex-col mt-6 gap-6 p-2'>
+          <h1 className='text-3xl font-serif font-bold'>what I Do !</h1>
+          <div className='md:grid md:grid-cols-2 gap-8 space-y-4'>
+            {
+              cards.map((items, index)=>(
+                <div>
+                  <div
+                      ref={(el) => (scrollRefs.current[index] = el)}
+                      onMouseEnter={() => startScroll(index, "up")}
+                      onMouseLeave={() => startScroll(index, "down")}
+                      className="h-80 w-72 overflow-y-scroll border border-gray-200 relative rounded-t-xl shadow-2xl mx-auto"
+                      style={{overflow: 'hidden'}}
+                  >
+                    {items.img}
+                  </div>
+                  <div className='h-20 w-72 bg-[#FFF4F4] rounded-b-xl mx-auto border border-gray-200 px-6 py-4 space-y-2'>
+                    <p className='text-sm text-gray-500 '>Travel Landing , UX/UI</p>
+                    <Link 
+                      to={items.domain}
+                      className='font-semibold font-serif text-stone-600 text-lg hover:text-blue-600'
+                    >
+                      {items.title}
+                    </Link>
                   </div>
                 </div>
+              ))
+            }
+          </div>
+          <div className='h-36 slider-container  w-full bg-rose-300 py-4 overflow-hidden'>
+            <div className='flex py-4 gap-12 px-8 slider-track '>
+              {
+              logos.map((logo, index)=>
+              (
+                  <img
+                    key={index}
+                    src={logo}
+                    alt={`Client ${index}`}
+                    className="h-16 mx-4 flex-shrink-0"
+                  />
+              ))
+              }
             </div>
           </div>
+      </div>
+    </div>
   )
 }
 
