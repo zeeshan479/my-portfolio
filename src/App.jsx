@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {
   BrowserRouter,
   Routes,
@@ -6,6 +6,7 @@ import {
 } from 'react-router-dom'
 
 import 'remixicon/fonts/remixicon.css'
+import 'animate.css'
 import Home from './component/Home'
 import Resume from './component/Resume'
 import Works from './component/Works'

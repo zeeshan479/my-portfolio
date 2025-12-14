@@ -1,9 +1,11 @@
 
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import 'animate.css';
 
 const Layout = ({children}) => {
   const location = useLocation()
+  const audioRef =  useRef(null)
 
   const menus = [
       {
@@ -47,6 +49,13 @@ const Layout = ({children}) => {
         a.click()
         a.remove()
         sessionStorage.setItem("resume",true)
+  }
+
+  const openWhatsapp = ()=>{
+    window.open("https://wa.me/919893676855")
+
+    audioRef.current.currentTime = 0;
+    audioRef.current.play();
   }
 
   return (
@@ -152,6 +161,16 @@ const Layout = ({children}) => {
                 ))
               }
             </div>
+          </div>
+
+          <div className='fixed top-160 right-20'>
+            <button 
+              className='bg-[#25D366] block w-fit px-3 py-2 rounded'
+              onClick={openWhatsapp}
+            >
+              <i className="ri-whatsapp-line text-5xl text-white block animate__animated animate__pulse animate__infinite"></i>
+            </button>
+            <audio ref={audioRef} src="/sounds/whatsapp.mp3" preload="auto" />
           </div>
         </div>
     </div>
