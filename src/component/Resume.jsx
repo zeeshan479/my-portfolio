@@ -63,8 +63,8 @@ const Resume = () => {
                       </div>
                       <div className='px-6 py-5 md:flex flex-col gap-1'>
                         <h1 className='text-3xl text-teal-600 font-bold font-sans capitalize'>Contact Me</h1>
-                        <p className='text-md text-gray-600'>+91 9893676855</p>
-                        <p className='text-md text-gray-600'>zeeshantechsunset@gmail.com</p>
+                        <p className='text-md text-gray-600'>+91 9698091405</p>
+                        <p className='text-md text-gray-600'>zeeshankhantechsunset@gmail.com</p>
                         <p className='text-md text-gray-600 capitalize'>Bhopal, Madhya Pradesh, India</p>
                       </div>
                     </div>
@@ -81,7 +81,7 @@ const Resume = () => {
                       <button className='w-12 h-12'></button>
                       <div>
                         <h6 className='text-lg font-bold'>Full Stack Developer (3 + years)</h6>
-                        <p className=' text-sm font-medium text-gray-600'>Techsunset [March 2022 - Nov 2025]</p>
+                        <p className=' text-sm font-medium text-gray-600'>Techsunset [Oct 2022 - May 2026]</p>
                       </div>
                     </div>
                     <div className='border-b-2 border-rose-600 py-2'></div>
