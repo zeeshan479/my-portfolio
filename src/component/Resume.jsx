@@ -95,7 +95,7 @@ const Resume = () => {
                         <button className='w-12 h-12'></button>
                         <div className='text-justify px-6'>
                           <p className='text-gray-400'>
-                            Full-Stack MERN Developer with extensive experience in JavaScript, React, Node.js, and MongoDB. Expert in designing and developing scalable web applications, enhancing user experience, and optimizing backend performance for high-traffic platforms.
+                            Full-Stack MERN Developer with extensive experience in JavaScript, React, Node.js, and MongoDB. Expert in designing and developing scalable web applications, enhancing user experience, and optimizing backend performance for high-traffic platforms
                           </p>
                         </div>
                       </div>
