@@ -85,7 +85,7 @@ const Layout = ({children}) => {
                     </button>
                     <div>
                       <lable className="text-sm text-gray-600 capitalize">phone</lable>
-                      <h1 className='text-md font-sans'>+91 9698091405</h1>
+                      <h1 className='text-md font-sans'>+91 9685091405</h1>
                     </div>
                   </div>
                   <hr className='w-[100%] text-gray-300 mt-2'/>
