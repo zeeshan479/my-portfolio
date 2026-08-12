@@ -63,7 +63,7 @@ const Resume = () => {
                       </div>
                       <div className='px-6 py-5 md:flex flex-col gap-1'>
                         <h1 className='text-3xl text-teal-600 font-bold font-sans capitalize'>Contact Me</h1>
-                        <p className='text-md text-gray-600'>+91 9698091405</p>
+                        <p className='text-md text-gray-600'>+91 9685091405</p>
                         <p className='text-md text-gray-600'>zeeshankhantechsunset@gmail.com</p>
                         <p className='text-md text-gray-600 capitalize'>Bhopal, Madhya Pradesh, India</p>
                       </div>
